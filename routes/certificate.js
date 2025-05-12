@@ -7,8 +7,8 @@ const router = express.Router();
 const QRCode = require('qrcode');
 
 
-const User = require('../models/User'); 
-const Course = require('../models/Course');
+const User = require('../models/user'); 
+const Course = require('../models/course');
 const os = require('os');
 const Order = require('../models/Orders');
 
@@ -22,7 +22,7 @@ function getLocalIPv4() {
       if (
         iface.family === 'IPv4' &&
         !iface.internal &&
-        name.toLowerCase().includes('wi-fi') // s'assurer que c’est bien l’interface Wi-Fi
+        name.toLowerCase().includes('wi-fi') // s'assurer que c'est bien l'interface Wi-Fi
       ) {
         return iface.address;
       }
