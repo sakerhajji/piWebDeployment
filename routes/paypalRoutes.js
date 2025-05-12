@@ -1,6 +1,6 @@
 const express = require("express");
 const paypal = require("../config/paypalConfig");
-const Order = require("../models/orders");  // Import the Order model
+const Order = require("../models/Orders");  // Import the Order model
 //const Order = require("../models/order");  // Import the Order model
 const router = express.Router();
 const Course = require("../models/course");  // Assuming you have a Course model
