@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const VideoProgressController = require('../controller/VideoProgressController');
+const VideoProgressController = require('../controller/videoProgressController');
 
 // Correct route order
 router.get('/videoProgress', VideoProgressController.getVideoProgressByUserAndVideo); // This should come first
