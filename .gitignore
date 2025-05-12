@@ -1,0 +1,14 @@
+# Node.js dependencies
+node_modules/
+
+# Environment variables
+.env
+
+# Package lock file (optional)
+package-lock.json
+uploads/
+
+.idea/
+!.idea/codeStyles/
+!.idea/runConfigurations/
+*.iml
